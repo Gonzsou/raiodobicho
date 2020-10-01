@@ -6,3 +6,5 @@ deny from all
 RewriteEngine On
 RewriteCond % ^raiodobicho.com [NC]
 RewriteRule ^(.*) http://www.raiodobicho.com/public/$1 [R=301,NC]
+
+AddType video/mp4
