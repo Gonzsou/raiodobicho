@@ -3,6 +3,8 @@ order allow,deny
 deny from all
 </Files>
 
+Redirect 301 / https://raiodobicho.com/public/
+
 RewriteEngine On
 RewriteCond % ^raiodobicho.com [NC]
 RewriteRule ^(.*) http://www.raiodobicho.com/public/$1 [R=301,NC]
