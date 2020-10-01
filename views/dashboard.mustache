@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <head>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/dashstyle.css">
+
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <h1>Dashboard</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                    Stats
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-light">
+                            <tr>
+                                <td>Total Stocks</td>
+                                <td>Total Brands</td>
+                            </tr>
+                            <tr>
+                                <td>{{#n1}}<h1>{{sum}}</h1>{{/n1}}</td>
+                                <td>{{#n2}}<h1>{{count}}</h1>{{/n2}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                    Stats
+                    </div>
+                    <div class="card-body">
+                    <a href="/add" class="btn btn-primary">Add Product</a>
+                    <a href="/meds" class="btn btn-primary">Inventory List</a>
+                    <a href="#" class="btn btn-primary">Edit Inventory</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

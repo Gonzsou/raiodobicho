@@ -1,0 +1,6 @@
+/* Maximum width */
+@media (max-width: 50rem) {
+    div {
+        border: 2px solid blue;
+    }
+}

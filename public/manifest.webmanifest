@@ -1,0 +1,47 @@
+{
+    "name": "RaioDoBicho - portfolio",
+    "short_name": "RaioDoBicho",
+    "start_url": "/",
+    "scope": ".",
+    "display": "standalone",
+    "background_color":"#fff",
+    "theme_color":"#3F51B5",
+    "description": "A portfolio of projects developed for learning",
+    "dir": "ltr",
+    "lang": "pt-PT",
+    "orientation": "portrait-primary",
+    "icons":[
+        {
+            "src": "/images/icons/app-icon-16x16.png",
+            "type": "image/png",
+            "sizes": "16x16"
+        },
+        {
+            "src": "/images/icons/app-icon-32x32.png",
+            "type": "image/png",
+            "sizes": "32x32"
+        },
+        {
+            "src": "/images/icons/android-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/images/icons/android-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "/images/icons/android-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any maskable"
+        }
+    ],
+    "related_applications": [
+    {
+        "platform": "play",
+        "url": "http://play.google.com/store/apps/details?id=com.example.appl",
+        "id": "com.example.appl"
+    }]
+}

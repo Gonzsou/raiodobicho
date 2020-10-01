@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <head>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <h1>This page lists the inventory</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">MID</th>
+                                <th scope="col">Product</th>
+                                <th scope="col">Count</th>
+                                <th scope="col">Manufacturer</th>
+                                <th scope="col">Edit</th>
+                                <th scope="col">Delete</th>
+                            </tr>
+                        </thead>
+                        {{#rows}}
+                            <tr>
+                                <td>{{mid}}</td>
+                                <td>{{name}}</td>
+                                <td>{{count}}</td>
+                                <td>{{brand}}</td>
+                                <td>
+                                    <form action="/meds/delete/{{mid}}" method="post">
+                                    <button class="btn btn-danger" type="submit">Delete</button>
+                                </td>
+                                <td>
+                                    <a class="btn btn-success" href="/meds/edit/{{mid}}">Edit</a>
+                                </td>
+                            </tr> 
+                        {{/rows}}   
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

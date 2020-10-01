@@ -1,0 +1,67 @@
+
+#myVideo{
+    max-width: 100%;
+    display: block;
+    }
+
+.centered-heading{
+    max-width: 100%;
+    position: absolute;
+
+    font-style: italic;
+    font-family: fantasy;
+    font-weight: lighter;
+
+    top: 35%;
+    left: 40%;
+
+    color:black;
+    font-size: 4em;
+}
+
+.centered{
+    max-width: 100%;
+    position: absolute;
+
+    font-style: italic;
+    font-family: fantasy;
+
+    top: 45%;
+    left:35%;
+
+    color:black;
+    font-size: 1.5em;
+}
+
+#continue{
+    max-width: 100%;
+    position: absolute;
+    top: 55%;
+    left: 45%;
+}
+
+.collapse{
+    max-width: 100%;
+}
+
+/* MEDIA QUERIES - css is top to bottom so rules below overide rules above */
+
+@media screen and (max-width: 1920px){
+    #myVideo {
+        max-width: 100%;
+    }
+    .centered-heading {
+        font-size: 2em;
+        left: 30%;
+}
+    .centered {
+        font-size: 2em;
+    }
+    #continue{
+        left: 37%;
+        font-size: 1em;
+    }
+    .row{
+        max-width: 100%;
+    }
+}
