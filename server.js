@@ -26,7 +26,7 @@ app.get('/add', (req, res)=>{           //route to render a route '/add' with a 
     res.render('med-form');
 });
 
-app.get('https://github.com/Gonzsou/raiodobicho/blob/master/views/noticias', (req, res)=>{      
+app.get('/noticias', (req, res)=>{      
     res.render('noticias');
 });
 
