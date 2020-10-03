@@ -18,7 +18,7 @@ mustache.cache = null;			    //set cache equals null
 app.engine('mustache', mustache);   //make mustache as the engine for the application
 app.set('view engine', 'mustache'); //set the view engine as mustache
 
-app.use(express.static('https://github.com/Gonzsou/raiodobicho/blob/master/public'));  //make the folder 'public' as the folder for the static files
+app.use(express.static('public'));  //make the folder 'public' as the folder for the static files
 app.use(bodyParser.urlencoded({extended:false})); //tell express we are using body-barser module
 
 /*Setup routes*/
@@ -26,7 +26,7 @@ app.get('/add', (req, res)=>{           //route to render a route '/add' with a 
     res.render('med-form');
 });
 
-app.get('/noticias', (req, res)=>{      
+app.get('https://github.com/Gonzsou/raiodobicho/blob/master/views/noticias', (req, res)=>{      
     res.render('noticias');
 });
 
